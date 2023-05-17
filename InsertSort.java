@@ -95,8 +95,8 @@ public final class InsertSort {
 
                 } catch (NumberFormatException error) {
                     // Display error to user.
-                    System.out.println("Valid input only!");
-                    write.println("Valid input only!");
+                    System.out.println("Incorrect, valid input.");
+                    write.println("Incorrect, valid input.");
                     continue;
                 }
             }
@@ -122,7 +122,7 @@ public final class InsertSort {
     */
     public static int[] insertSort(int[] listNum) {
         // Usage of for loop to access each element in array.
-        for (int counter1 = 1; counter1 < listNum.length - 1; counter1++) {
+        for (int counter1 = 1; counter1 < listNum.length; counter1++) {
             // Declare variable.
             final int current = listNum[counter1];
             int temp = counter1 - 1;
